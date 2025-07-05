@@ -1,0 +1,70 @@
+/* Base Mobile Styles */
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: #ffebee;
+    margin: 0;
+    padding: 0;
+}
+
+.a {
+    background: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.c {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.c img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+
+.d {
+    background: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Tablet View (772px) */
+@media (min-width: 772px) {
+    .b {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .c {
+        width: 45%;
+    }
+    
+    .c img {
+        max-height: 30vh;
+    }
+}
+
+/* Desktop View (998px) */
+@media (min-width: 998px) {
+    .c {
+        width: 30%;
+    }
+}
